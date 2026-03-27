@@ -1,0 +1,21 @@
+name: CI — partforge
+
+on: [push, pull_request]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get install -y gcc
+          pip install esptool
+
+      - name: Build
+        run: make all
+
+      - name: Tests
+        run: ./build/test_crc32
