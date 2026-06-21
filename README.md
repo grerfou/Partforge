@@ -16,13 +16,13 @@ table format.
 
 🔧 Work in progress
 
-| Phase | Description | Status |
-|-------|-------------|--------|
-| 1 | Understand ESP32-S3 boot sequence | ✅ Done |
-| 2 | Reverse engineer partition table binary format | ✅ Done |
-| 3 | Generate valid ptable.bin from scratch | ✅ Done |
-| 4 | Boot bare-metal code without IDF | 🔲 In progress |
-| 5 | Full documentation and tests | 🔲 Planned |
+| Phase | Description | Status | Doc |
+|-------|-------------|--------|-----|
+| 1 | Understand ESP32-S3 boot sequence | ✅ Done | [phase1.md](doc/phase1.md) |
+| 2 | Reverse engineer partition table binary format | ✅ Done | [phase2.md](doc/phase2.md) |
+| 3 | Generate valid ptable.bin from scratch | ✅ Done | [phase3.md](doc/phase3.md) |
+| 4 | Boot bare-metal code without IDF | 🔲 In progress | — |
+| 5 | Full documentation and tests | 🔲 Planned | — |
 
 ## Key findings
 
